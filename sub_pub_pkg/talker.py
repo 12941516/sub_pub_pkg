@@ -12,7 +12,7 @@ class Talker(Node):
 
     def timer_callback(self):
         msg = String()
-        msg.data = 'Hello, ROS 2!')
+        msg.data = 'Hello, ROS 2!'
         self.publisher_.publish(msg)
         self.get_logger().info(f'Publishing: {msg.data}')
 
