@@ -12,7 +12,6 @@ class Listener(Node):
             self.listener_callback,
             10
         )
-        self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
         self.get_logger().info(f'Received: {msg.data}')
